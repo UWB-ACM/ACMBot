@@ -1,5 +1,5 @@
 # ACMBot
-A utility bot for the UWB ACM Discord server. Written in Python using the [discord.py](discord.py) library.
+A utility bot for the UWB ACM Discord server. Written in Python using the [discord.py][discord.py] library.
 
 ## Commands Reference
 
@@ -7,11 +7,11 @@ A utility bot for the UWB ACM Discord server. Written in Python using the [disco
 
 ## Contributing
 
-Please see the [contribution guidelines described in CONTRIBUTING.](contributing)
+Please see the [contribution guidelines described in CONTRIBUTING.][contributing]
 
 ## Installation and Running Locally
 
-*If you encounter any problems, please [read the Installation FAQ.](installationFAQ)*
+*If you encounter any problems, please [read the Installation FAQ.][installationFAQ]*
 
 If you wish to make modifications to the codebase, fork this repository first. Then,
 clone the repository to your machine.
@@ -43,7 +43,7 @@ python3 -m pip install -r requirements.txt
 
 ### Setup
 
-Create and register a new Discord Bot application [in the Discord Application Portal.](discordapi)
+Create and register a new Discord Bot application [in the Discord Application Portal.][discordapi]
 
 Create a new file called `config.ini` in your local repo's root directory with the following
 contents:
@@ -71,6 +71,6 @@ displayed in the console.
 Then, test that the bot is working by typing `;;ping` in a channel with the bot.
 
 [discord.py]: https://github.com/Rapptz/discord.py
-[contributing]: .github/CONTRIBUTING
+[contributing]: .github/CONTRIBUTING.md
 [installationFAQ]: docs/InstallationFAQ.md
 [discordapi]: https://discordapp.com/developers/applications/me
