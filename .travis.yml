@@ -1,0 +1,8 @@
+language: python
+python:
+  - "3.6"
+  - "3.7"
+install:
+  - python3 -m pip install -r requirements.txt
+script:
+  - if python3 test.py; then ((find . -iname "*.py" | xargs python3 -m pylint) || exit 0 ); else ((find . -iname "*.py" | xargs python3 -m pylint) || exit 1); fi;
