@@ -1,6 +1,8 @@
 # ACMBot
 A utility bot for the UWB ACM Discord server. Written in Python using the [discord.py][discord.py] library.
 
+[![Build Status](https://travis-ci.com/UWB-ACM/ACMBot.svg?branch=master)](https://travis-ci.com/UWB-ACM/ACMBot)
+
 ## Commands Reference
 
 `TODO`
