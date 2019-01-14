@@ -13,11 +13,10 @@ with open('config.ini') as config_file:
 # startup stuff
 print(f'discordpy version: {discord.__version__}')
 
-client = commands.Bot(command_prefix=';;', description='Utility bot for the UWB ACM Discord server. View source at '
+client = commands.Bot(command_prefix='$', description='Utility bot for the UWB ACM Discord server. View source at '
                                                        'github.com/UWB-ACM/ACMBot')
 
-# this is where extensions are added by default
-default_extensions = ['cogs.base']
+default_extensions = ['cogs.base', 'cogs.trelloActivity']
 
 
 if __name__ == '__main__':
@@ -33,7 +32,7 @@ if __name__ == '__main__':
 async def on_ready():
     # print some stuff when the bot goes online
     print(f'Logged in {client.user.name} - {client.user.id}\nVersion {discord.__version__}')
-    await client.change_presence(activity=discord.Game(name='Try ;;help'))
+    await client.change_presence(activity=discord.Game(name='Try $help'))
 
 # now actually connect the bot
 client.run(config.get(section='Configuration', option='connection_token'),
