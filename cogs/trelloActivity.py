@@ -23,6 +23,8 @@ action_dict = {
     "addMembertoCard": "Member Assigned to Card",
     "commentCard": "Comment left on Card",
     "updateCard": "Card Updated",
+    "addLabelToCard": "Label Added",
+    "addAttachmentToCard": "Attachment Added"
 }
 
 ACTION_FILTER = "addAdminToBoard,addAdminToOrganization,addAttachmentToCard,addBoardsPinnedToMember,addChecklistToCard,addLabelToCard,addMemberToBoard,addMemberToCard,addMemberToOrganization,addToOrganizationBoard,commentCard,convertToCardFromCheckItem,copyBoard,copyCard,copyChecklist,createLabel,copyCommentCard,createBoard,createBoardInvitation,createBoardPreference,createCard,createChecklist,createList,createOrganization,createOrganizationInvitation,deleteAttachmentFromCard,deleteBoardInvitation,deleteCard,deleteCheckItem,deleteLabel,deleteOrganizationInvitation,disablePlugin,disablePowerUp,emailCard,enablePlugin,enablePowerUp,makeAdminOfBoard,makeAdminOfOrganization,makeNormalMemberOfBoard,makeNormalMemberOfOrganization,makeObserverOfBoard,memberJoinedTrello,moveCardFromBoard,moveCardToBoard,moveListFromBoard,moveListToBoard,removeAdminFromBoard,removeAdminFromOrganization,removeBoardsPinnedFromMember,removeChecklistFromCard,removeFromOrganizationBoard,removeLabelFromCard,removeMemberFromBoard,removeMemberFromCard,removeMemberFromOrganization,unconfirmedBoardInvitation,unconfirmedOrganizationInvitation,updateBoard,updateCard,updateCheckItem,updateCheckItemStateOnCard,updateChecklist,updateLabel,updateList,updateMember,updateOrganization,voteOnCard"
