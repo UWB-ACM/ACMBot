@@ -11,13 +11,6 @@ A utility bot for the UWB ACM Discord server. Written in Python using the [disco
 
 Please see the [contribution guidelines described in CONTRIBUTING.][contributing]
 
-## Installation and Running Locally
-
-*If you encounter any problems, please [read the Installation FAQ.][installationFAQ]*
-
-If you wish to make modifications to the codebase, fork this repository first. Then,
-clone the repository to your machine.
-
 ### Installation
 
 First, ensure that you have Python 3.6 installed with an up-to-date version of `pip`.
@@ -53,6 +46,15 @@ contents:
 ```ini
 [Configuration]
 connection_token=YOUR_TOKEN_GOES_HERE
+
+[Discord]
+private_guild_id=123
+trello_channel_id=123
+
+[Trello]
+board_id=TRELLO_BOARD_ID
+api_key=API_KEY
+api_seret=API_SECRET
 ```
 
 ### Running the Bot
@@ -74,5 +76,4 @@ Then, test that the bot is working by typing `;;ping` in a channel with the bot.
 
 [discord.py]: https://github.com/Rapptz/discord.py
 [contributing]: .github/CONTRIBUTING.md
-[installationFAQ]: docs/InstallationFAQ.md
 [discordapi]: https://discordapp.com/developers/applications/me
