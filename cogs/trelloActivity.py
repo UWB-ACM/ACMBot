@@ -69,7 +69,7 @@ class TrelloActivity:
             # make an embed and send a message with the action
             e = self.make_action_embed(action, action_dict[action_type])
             if c is not None and e is not None:
-                await c.send(f'Got an action of {action_type}', embed=e)
+                await c.send(f'New Notification: {action_dict[action_type]}', embed=e)
         else:
             print("Ignoring action ", action_type)
             # discard this action
@@ -116,7 +116,7 @@ class TrelloActivity:
             e.set_author(name=author)
 
         # because I'm lazy, just append info to the description
-        e.description = ""
+        e.description = action_type
 
         list_name = self.get_list_name(action)
         if list_name is not None:
