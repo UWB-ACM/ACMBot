@@ -115,8 +115,10 @@ class TrelloActivity:
         if author is not None:
             e.set_author(name=author)
 
+        e.add_field(name="Notification", value=action_type)
+
         # because I'm lazy, just append info to the description
-        e.description = action_type
+        e.description = ""
 
         list_name = self.get_list_name(action)
         if list_name is not None:
@@ -133,7 +135,7 @@ class TrelloActivity:
         card_move = self.get_card_moved(action)
         if card_move is not None:
             e.description += f"Card was moved from {card_move[0]} to {card_move[1]}"
-        
+
         return e
 
     def get_author(self, action: dict) -> str:
