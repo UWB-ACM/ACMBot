@@ -68,7 +68,8 @@ class TrelloActivity:
             #async with c.typing():
             # make an embed and send a message with the action
             e = self.make_action_embed(action, action_dict[action_type])
-            await c.send(action_type, embed=e)
+            if c is not None and e is not None:
+                await c.send(f'Got an action of {action_type}', embed=e)
         else:
             print("Ignoring action ", action_type)
             # discard this action
