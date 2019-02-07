@@ -54,7 +54,7 @@ trello_channel_id=123
 [Trello]
 board_id=TRELLO_BOARD_ID
 api_key=API_KEY
-api_seret=API_SECRET
+api_token=API_SECRET
 ```
 
 ### Running the Bot

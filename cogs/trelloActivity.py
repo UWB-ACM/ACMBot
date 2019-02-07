@@ -200,7 +200,7 @@ def setup(bot):
     board_id = config['Trello']['board_id']
     api_key = config['Trello']['api_key']
     api_token = config['Trello']['api_token']
-    trello_channel = long(config['Discord']['trello_channel_id'])
+    trello_channel = int(config['Discord']['trello_channel_id'])
 
     bot.add_cog(TrelloActivity(bot, board_id, api_key, api_token, trello_channel))
 
