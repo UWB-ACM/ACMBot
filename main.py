@@ -27,6 +27,9 @@ if __name__ == '__main__':
             print(f'Failed to load extension {extension}.', file=sys.stderr)
             traceback.print_exc()
 
+@client.event
+async def on_member_join(member):
+    await client.send_message(member, 'Welcome to the ACM Officer Discord server! :tada:')
 
 @client.event
 async def on_ready():
